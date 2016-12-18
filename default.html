@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>qTrip by Indasys</title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="qTrip.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script src="qTrip.js"></script>
+    </head>
+    <body>
+		
+        <!-- Home -->
+			<div data-role="page" id="page1">
+
+			<div id="header" data-theme="b" data-role="header" data-position="fixed">
+				<h1>qTrip</h1>
+				<div data-role="navbar" data-iconpos="left">
+					<ul>
+						<li><a href="#page1" data-transition="fade" data-theme="b" data-icon="plus" class="ui-btn-active ui-state-persist">Entry</a></li>
+						<li><a href="#page2" data-transition="fade" data-theme="b" data-icon="grid">History</a></li>
+						<li><a href="#page3" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <input name="" id="odometer-text" placeholder="Odometer" value="" type="number" />
+                    </fieldset>
+                </div>
+                <a id="start-button" data-role="button" data-theme="b" href="#page1">START TRIP</a>
+                <a id="end-button" data-role="button" data-theme="b" href="#page1">END TRIP</a>
+                <a id="cancel-button" data-role="button" data-theme="b" href="#page1">CANCEL TRIP</a>
+                <div data-role="fieldcontain">
+                    <label for="reason-list">
+                    </label>
+                    <select id="reason-list" name="" data-mini="true">
+                        <option value="">
+                            No Reason
+                        </option>
+                        <option value="">
+                            &lt;New Reason&gt;
+                        </option>
+                    </select>
+                </div>
+            </div>
+			<div data-theme="b" data-role="footer">Copyright &copy; 2013 Indasys, LLC</div>
+        </div>
+		
+        <div data-role="page" id="page2">
+            <div data-role="content">
+				<h1>some text</h1>
+			</div>
+		</div>
+        
+		
+    </body>
+</html>
